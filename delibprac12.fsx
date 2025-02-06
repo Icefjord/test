@@ -6,9 +6,9 @@ type Person(name:string, add:string, phone: int) =
 type Customer(a,b,c,num:int, mail:bool) = 
     inherit Person (a,b,c)
     member val Number = num with get, set
-    member val mail = mail with get, set
+    member val x = 45
 
-let dave = Customer("Dave", "57 Ave", 23764422, 12, false)
+let dave = Customer("Magnus", "57 Ave", 23764422, 12, false)
 
 printf "
 %A
