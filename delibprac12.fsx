@@ -3,12 +3,13 @@ type Person(name:string, add:string, phone: int) =
     member val address = add with get, set
     member val phone = phone with get, set
 
+
 type Customer(a,b,c,num:int, mail:bool) = 
     inherit Person (a,b,c)
     member val Number = num with get, set
     member val x = 45
 
-let dave = Customer("Magnus", "57 Ave", 23764422, 12, false)
+let dave = Customer("Fred", "57 Ave", 23764422, 12, false)
 
 printf "
 %A
